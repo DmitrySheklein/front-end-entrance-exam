@@ -5,12 +5,14 @@ import './user-block.css';
 export function UserBlock() {
   return /* html */ `
     ${Box({
+      className: 'box--avatar',
       children: /*html*/ `
-        <img src="${avatar}" class="avatar" alt="Karthik SR" />
-        `,
+      <img src="${avatar}" class="avatar" alt="Karthik SR" />
+      `,
     })}
-
+    
     ${Box({
+      className: 'box--user',
       children: /*html*/ `
       <div class="user">
         <span class="user__message">Hello 👋🏻 I’m </span>

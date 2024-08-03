@@ -3,6 +3,7 @@ import './languages.css';
 
 export function Languages() {
   return Box({
+    className: 'box--languages',
     title: 'Languages',
     children: /*html*/ `
         <ul class="languages-list">

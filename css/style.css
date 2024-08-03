@@ -93,7 +93,14 @@ button:focus-visible {
 }
 
 .main {
-  display: flex;
+  display: grid;
   gap: 20px;
+  grid-template-columns: repeat(4, 124px);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "avatar user languages languages"
+    "experience experience experience tools"
+    "education education interests interests" 
+    "education education contacts contacts" 
 }
 

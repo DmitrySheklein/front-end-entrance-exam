@@ -7,10 +7,51 @@
   background-color: var(--color-dark-gray);
 }
 
+.box--contacts {
+  background-color: var(--color-black);
+}
+
 @media (prefers-color-scheme: light) {
   .box {
     background-color: var(--color-gray);
   }
+
+  .box--contacts {
+    background-color: var(--color-black);
+    color: var(--color-white)
+  }
+}
+
+.box--avatar {
+  grid-area: avatar;
+}
+
+.box--user {
+  grid-area: user;
+}
+
+.box--languages {
+  grid-area: languages;
+}
+
+.box--experience {
+  grid-area: experience;
+}
+
+.box--tools {
+  grid-area: tools;
+}
+
+.box--education {
+  grid-area: education;
+}
+
+.box--interests {
+  grid-area: interests;
+}
+
+.box--contacts {
+  grid-area: contacts;
 }
 
 .box__title {

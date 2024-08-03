@@ -1,7 +1,7 @@
 import './box.css';
 
 export function Box(props) {
-  const { children, title, className = '' } = props;
+  const { children = '', title, className = '' } = props;
 
   const Title = title ? `<h2 class="box__title">${title}</h2>` : '';
 
