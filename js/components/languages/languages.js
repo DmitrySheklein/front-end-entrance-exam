@@ -1,13 +1,13 @@
 import { Box } from './../box/box';
 import './languages.css';
 
-export function Languages() {
-  const data = [
-    { title: 'English', value: 100 },
-    { title: 'Malayalam', value: 100 },
-    { title: 'Hindi', value: 80 },
-  ];
+const data = [
+  { title: 'English', value: 100 },
+  { title: 'Malayalam', value: 100 },
+  { title: 'Hindi', value: 80 },
+];
 
+export function Languages() {
   return Box({
     className: 'box--languages',
     title: 'Languages',

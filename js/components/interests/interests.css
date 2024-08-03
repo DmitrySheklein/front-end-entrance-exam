@@ -1,0 +1,12 @@
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.interests-list__tag {
+    font-size: 10px;
+    padding: 4px 10px;
+    background-color: var(--color-white);
+    border-radius: 40px;
+}
