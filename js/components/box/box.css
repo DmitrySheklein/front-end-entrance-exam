@@ -17,8 +17,9 @@
   }
 
   .box--contacts {
+    min-height: auto;
     background-color: var(--color-black);
-    color: var(--color-white)
+    color: var(--color-white);
   }
 }
 
