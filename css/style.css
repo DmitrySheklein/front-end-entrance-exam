@@ -95,6 +95,7 @@ button:focus-visible {
 .main {
   display: grid;
   gap: 20px;
+  justify-content: center;
   grid-template-columns: repeat(4, 124px);
   grid-template-areas:
     "avatar user languages languages"
