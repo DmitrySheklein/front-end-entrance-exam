@@ -11,6 +11,12 @@
   background-color: var(--color-black);
 }
 
+.box--content{
+  background-color: var(--color-white-10);
+  padding: 8px;
+  min-height: auto;
+}
+
 @media (prefers-color-scheme: light) {
   .box {
     background-color: var(--color-gray);
@@ -20,6 +26,9 @@
     min-height: auto;
     background-color: var(--color-black);
     color: var(--color-white);
+  }
+  .box--content{
+    background-color: var(--color-white);
   }
 }
 

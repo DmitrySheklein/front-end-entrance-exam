@@ -1,0 +1,31 @@
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+.experience-item__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-item__date {
+    font-size: 8px;
+}
+
+.experience-item__tag {
+    font-size: 8px;
+}
+
+.experience-item__role {
+    font-size:10px;
+}
+
+.experience-item__list {
+    list-style: square;
+}
