@@ -1,0 +1,19 @@
+.box {
+  position: relative;
+  min-width: 124px;
+  min-height: 124px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--color-dark-gray);
+}
+
+@media (prefers-color-scheme: light) {
+  .box {
+    background-color: var(--color-gray);
+  }
+}
+
+.box__title {
+  font-size: 14px;
+  margin-bottom: 16px;
+}

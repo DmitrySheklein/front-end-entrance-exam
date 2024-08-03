@@ -1,0 +1,28 @@
+.avatar {
+    position: absolute;
+    inset: 0;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.user__message {
+  font-size: 10px;
+}
+
+.user__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.user__name {
+  font-size: 14px;
+}
+.user__role {
+  font-size: 12px;
+}
