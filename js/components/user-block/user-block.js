@@ -15,10 +15,10 @@ export function UserBlock() {
       className: 'box--user',
       children: /*html*/ `
       <div class="user">
-        <span class="user__message">Hello 👋🏻 I’m </span>
+        <span class="user__message" contenteditable>Hello 👋🏻 I’m </span>
         <div class="user__info">
-            <h2 class="user__name">Karthik SR</h2>
-            <strong class="user__role">UX/UI Designer</strong>
+            <h2 class="user__name" contenteditable>Karthik SR</h2>
+            <strong class="user__role" contenteditable>UX/UI Designer</strong>
         </div>
       </div>
       `,

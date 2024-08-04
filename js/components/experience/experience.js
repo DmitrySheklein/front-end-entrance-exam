@@ -26,22 +26,22 @@ export function Experience() {
               <div class="experience-item">
                 <header class="experience-item__header">
                   <span class="experience-item__date">
-                    <time datetime="${dateTimeFrom}">${dateFrom}</time>
+                    <time datetime="${dateTimeFrom}" contenteditable>${dateFrom}</time>
                     - 
-                    <time datetime="${dateTimeTo}">${dateTo}</time>                  
+                    <time datetime="${dateTimeTo}" contenteditable>${dateTo}</time>                  
                   </span>
-                  ${isMostRecent ? `<sup class="experience-item__tag">most-recent</sup>` : ''}                
+                  ${isMostRecent ? `<sup class="experience-item__tag contenteditable" contenteditable>most-recent</sup>` : ''}                
                 </header>
 
                 <div class="experience-item__content">
                   <div class="experience-item__info">
-                    <h3 class="experience-item__role">${role}</h3>
-                    <span class="experience-item__about ${isMostRecent ? 'experience-item__about--accent' : ''}">
+                    <h3 class="experience-item__role" contenteditable>${role}</h3>
+                    <span class="experience-item__about ${isMostRecent ? 'experience-item__about--accent' : ''}" contenteditable>
                       ${companyName ? `${companyName}<span class="experience-item__delimetr">|</span>` : ''}${info}
                     </span>
                   </div>
                   <ul class="experience-item__list">
-                    ${points.map((point) => `<li class="experience-item__list-item">${point}</li>`).join('')}                  
+                    ${points.map((point) => `<li class="experience-item__list-item" contenteditable>${point}</li>`).join('')}                  
                   </ul>
                 </div>
               </div>

@@ -17,7 +17,7 @@ export function Languages() {
               .map(
                 ({ title, value }) => /*html*/ `
                 <li class="languages-list__item">
-                    <h3 class="languages-list__title">${title}</h3>
+                    <h3 class="languages-list__title" contenteditable>${title}</h3>
                     <progress class="languages-list__progress" value="${value}" max="100">${value}%</progress>
                 </li>`,
               )

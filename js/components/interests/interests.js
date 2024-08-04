@@ -8,7 +8,7 @@ export function Interests() {
     className: 'box--interests',
     children: /* html */ `
     <ul class="interests-list">
-      ${tags.map((tag) => `<li class="interests-list__tag">${tag}</li>`).join('')}      
+      ${tags.map((tag) => `<li class="interests-list__tag" contenteditable>${tag}</li>`).join('')}      
     </ul>
     `,
   });
