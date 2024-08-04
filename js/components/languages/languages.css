@@ -1,7 +1,7 @@
 .languages-list {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 
 .languages-list__item {
@@ -27,15 +27,14 @@
   background-color: transparent;
 }
 
-
 .languages-list__progress::-webkit-progress-value {
-  background-color: #28D979;
+  background-color: #28d979;
   border-radius: 3px;
   overflow: hidden;
 }
 
 .languages-list__progress::-moz-progress-bar {
-    background-color: #28D979;
-    border-radius: 3px;
-    overflow: hidden; 
+  background-color: #28d979;
+  border-radius: 3px;
+  overflow: hidden;
 }

@@ -1,14 +1,13 @@
 .contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .contacts__title {
-    font-size: 14px;
+  font-size: 14px;
 }
 .contacts__email {
-    font-size: 12px;
-    color: var(--color-ligth-gray);
-
+  font-size: 12px;
+  color: var(--color-ligth-gray);
 }

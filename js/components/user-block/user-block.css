@@ -1,9 +1,9 @@
 .avatar {
-    position: absolute;
-    inset: 0;
+  position: absolute;
+  inset: 0;
 }
 
-.user {    
+.user {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

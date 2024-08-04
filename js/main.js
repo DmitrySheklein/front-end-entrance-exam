@@ -7,6 +7,7 @@ import { Tools } from './components/tools/tools';
 import { Education } from './components/education/education';
 import { Interests } from './components/interests/interests';
 import { Contacts } from './components/contacts/contacts';
+import { Download } from './components/download/download';
 
 document.querySelector('#app').innerHTML = /*html*/ `
   <main class="main">
@@ -17,5 +18,6 @@ document.querySelector('#app').innerHTML = /*html*/ `
     ${Education()}
     ${Interests()}
     ${Contacts()}
+    ${Download()}
   </main>
 `;
