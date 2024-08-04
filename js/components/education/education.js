@@ -14,11 +14,14 @@ export function Education() {
           const isFirstItem = idx === 0;
 
           return Box({
+            tag: 'li',
             className: `box--content ${isFirstItem ? 'box--accent' : ''}`,
             children: /* html */ `
-              <li class="education-item">
+              <div class="education-item">
                 <header class="education-item__header">
-                  <date class="education-item__date">${date}</date>
+                  <span class="education-item__date">
+                    ${date.map((el) => `<time datetime="${el}">${el}</time>`).join(' - ')}                                   
+                  </span>
                   ${isFirstItem ? `<img src="${heartIcon}" class="education-item__icon" alt="Heart" />` : ''}          
                 </header>
                 <div class="education-item__content">
@@ -28,7 +31,7 @@ export function Education() {
                   </ul>
                 </div>
                 <span class="education-item__school-name">${schoolName}</span>
-              </li>
+              </div>
             `,
           });
         })

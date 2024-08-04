@@ -1,7 +1,8 @@
 export const jobList = [
   {
     isMostRecent: true,
-    date: 'Jun. 2023 - Present',
+    date: ['Jun. 2023', 'Present'],
+    dateTime: ['2023-06-01', '2024-08-04'],
     role: 'Marketing Manager',
     companyName: 'Pankayam',
     info: 'Full-time',
@@ -12,7 +13,8 @@ export const jobList = [
   },
   {
     isMostRecent: false,
-    date: '2017 - Present',
+    date: ['2017', 'Present'],
+    dateTime: ['2017-01-01', '2024-08-04'],
     role: 'Graphic / Web designer',
     companyName: null,
     info: 'Freelance',
@@ -24,7 +26,8 @@ export const jobList = [
   },
   {
     isMostRecent: false,
-    date: 'Sep. 2021 - Jun. 2023',
+    date: ['Sep. 2021', 'Jun. 2023'],
+    dateTime: ['2021-09-01', '2023-06-30'],
     role: 'Legal Assistant',
     companyName: 'Law Firm',
     info: 'Intern',

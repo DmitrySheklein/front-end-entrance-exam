@@ -41,10 +41,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.tools-item__image:nth-child(even){
+.tools-item__image-wrap:nth-child(even){
     justify-self: flex-start;
 }
-.tools-item__image:nth-child(odd){
+.tools-item__image-wrap:nth-child(odd){
     justify-self: flex-end;
 }
 

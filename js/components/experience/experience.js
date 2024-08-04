@@ -9,13 +9,27 @@ export function Experience() {
     children: /*html*/ `
     <ul class="experience-list">
       ${jobList
-        .map(({ isMostRecent, date, role, companyName, info, points }) =>
-          Box({
-            className: `box--content ${isMostRecent ? 'box--accent' : ''}`,
-            children: /* html */ `
-              <li class="experience-item">
+        .map(
+          ({
+            isMostRecent,
+            date: [dateFrom, dateTo],
+            dateTime: [dateTimeFrom, dateTimeTo],
+            role,
+            companyName,
+            info,
+            points,
+          }) =>
+            Box({
+              tag: 'li',
+              className: `box--content ${isMostRecent ? 'box--accent' : ''}`,
+              children: /* html */ `
+              <div class="experience-item">
                 <header class="experience-item__header">
-                  <date class="experience-item__date">${date}</date>
+                  <span class="experience-item__date">
+                    <time datetime="${dateTimeFrom}">${dateFrom}</time>
+                    - 
+                    <time datetime="${dateTimeTo}">${dateTo}</time>                  
+                  </span>
                   ${isMostRecent ? `<sup class="experience-item__tag">most-recent</sup>` : ''}                
                 </header>
 
@@ -30,9 +44,9 @@ export function Experience() {
                     ${points.map((point) => `<li class="experience-item__list-item">${point}</li>`).join('')}                  
                   </ul>
                 </div>
-              </li>
+              </div>
             `,
-          }),
+            }),
         )
         .join('')}    
     </ul>
