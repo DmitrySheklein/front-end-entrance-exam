@@ -9,9 +9,10 @@ import { Interests } from './components/interests/interests';
 import { Contacts } from './components/contacts/contacts';
 import { Download } from './components/download/download';
 import { setupDownloadPDF } from './download-pdf';
+import { ElementId } from './const';
 
 document.querySelector('#app').innerHTML = /*html*/ `
-  <main class="main" id="main">
+  <main class="main" id="${ElementId.Main}">
     ${UserBlock()}
     ${Languages()}
     ${Experience()}
@@ -24,6 +25,6 @@ document.querySelector('#app').innerHTML = /*html*/ `
 `;
 
 setupDownloadPDF({
-  container: document.querySelector('#main'),
-  btn: document.querySelector('#download-btn'),
+  container: document.getElementById(ElementId.Main),
+  btn: document.getElementById(ElementId.Btn),
 });
