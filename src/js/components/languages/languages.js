@@ -1,4 +1,4 @@
-import { Box } from './../box/box';
+import { Box } from '../box/box';
 import { renderList } from '../../helpers/utils';
 import './languages.css';
 

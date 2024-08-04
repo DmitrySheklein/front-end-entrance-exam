@@ -8,6 +8,7 @@ import { Education } from './components/education/education';
 import { Interests } from './components/interests/interests';
 import { Contacts } from './components/contacts/contacts';
 import { Download } from './components/download/download';
+import { EditManager } from './edit-manager';
 
 document.querySelector('#app').innerHTML = /*html*/ `
   <main class="main">
@@ -21,3 +22,6 @@ document.querySelector('#app').innerHTML = /*html*/ `
     ${Download()}
   </main>
 `;
+
+const editManager = new EditManager();
+editManager.init();
