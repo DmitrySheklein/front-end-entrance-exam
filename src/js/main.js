@@ -8,20 +8,22 @@ import { Education } from './components/education/education';
 import { Interests } from './components/interests/interests';
 import { Contacts } from './components/contacts/contacts';
 import { Download } from './components/download/download';
-import { EditManager } from './edit-manager';
+import { setupDownloadPDF } from './download-pdf';
 
 document.querySelector('#app').innerHTML = /*html*/ `
-  <main class="main">
+  <main class="main" id="main">
     ${UserBlock()}
     ${Languages()}
     ${Experience()}
     ${Tools()}
     ${Education()}
     ${Interests()}
-    ${Contacts()}
-    ${Download()}
+    ${Contacts()}   
   </main>
+  ${Download()}
 `;
 
-const editManager = new EditManager();
-editManager.init();
+setupDownloadPDF({
+  container: document.querySelector('#main'),
+  btn: document.querySelector('#download-btn'),
+});
