@@ -5,6 +5,7 @@ import './interests.css';
 export function Interests() {
   return Box({
     title: 'Interests',
+    tag: 'section',
     className: 'box--interests',
     children: /* html */ `
     <ul class="interests-list">

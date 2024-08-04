@@ -5,6 +5,7 @@ import './experience.css';
 export function Experience() {
   return Box({
     title: 'Experience',
+    tag: 'section',
     className: 'box--experience',
     children: /*html*/ `
     <ul class="experience-list">

@@ -4,6 +4,7 @@ import './contacts.css';
 export function Contacts() {
   return Box({
     className: 'box--contacts',
+    tag: 'section',
     children: /* html */ `
     <div class="contacts">
         <h3 class="contacts__title" contenteditable>Let´s chat! I´m ready to work on excinting projects</h3>

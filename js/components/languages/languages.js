@@ -9,6 +9,7 @@ const data = [
 
 export function Languages() {
   return Box({
+    tag: 'section',
     className: 'box--languages',
     title: 'Languages',
     children: /*html*/ `

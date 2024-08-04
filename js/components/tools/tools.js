@@ -5,6 +5,7 @@ import './tools.css';
 export function Tools() {
   return Box({
     title: 'Tools',
+    tag: 'section',
     className: 'box--tools',
     children: /*html*/ `
     <ul class="tools-list">

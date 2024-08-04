@@ -6,6 +6,7 @@ import './education.css';
 export function Education() {
   return Box({
     title: 'Education',
+    tag: 'section',
     className: 'box--education',
     children: /*html*/ `
     <ul class="education-list">

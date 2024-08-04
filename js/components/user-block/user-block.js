@@ -12,6 +12,7 @@ export function UserBlock() {
     })}
     
     ${Box({
+      tag: 'section',
       className: 'box--user',
       children: /*html*/ `
       <div class="user">
