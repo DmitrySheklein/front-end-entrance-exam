@@ -1,6 +1,6 @@
 import { Box } from '../box/box';
 import { ToolsData } from './tools.data';
-import { renderList } from '../../helpers/utils';
+import { renderList } from '../../utils/renderList';
 import './tools.css';
 
 export function Tools() {

@@ -1,5 +1,5 @@
 import { Box } from '../box/box';
-import { renderList } from '../../helpers/utils';
+import { renderList } from '../../utils/renderList';
 import { tags } from './interests.data';
 import './interests.css';
 

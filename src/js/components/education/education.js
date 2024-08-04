@@ -1,6 +1,6 @@
 import { Box } from '../box/box';
 import heartIcon from '/heart.svg';
-import { renderList } from '../../helpers/utils';
+import { renderList } from '../../utils/renderList';
 import { educationList } from './education.data';
 import './education.css';
 
