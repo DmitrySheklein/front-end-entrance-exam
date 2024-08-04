@@ -7,7 +7,7 @@ export function Experience() {
     title: 'Experience',
     className: 'box--experience',
     children: /*html*/ `
-    <div class="experience-list">
+    <ul class="experience-list">
       ${jobList
         .map(({ isMostRecent, date, role, companyName, info, points }) =>
           Box({
@@ -35,7 +35,7 @@ export function Experience() {
           }),
         )
         .join('')}    
-    </div>
+    </ul>
     `,
   });
 }
