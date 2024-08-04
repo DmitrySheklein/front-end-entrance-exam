@@ -12,7 +12,7 @@
     flex-direction: column;   
     gap: 10px; 
     padding: 0 4px 16px;
-    background-color: var(--color-white-10);
+    background-color: var(--color-white-transparent);
     border-radius: 6px;
 }
 
