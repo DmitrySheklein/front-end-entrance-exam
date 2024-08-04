@@ -1,18 +1,6 @@
 import { Box } from '../box/box';
+import { tags } from './interests.data';
 import './interests.css';
-
-const tags = [
-  'branding',
-  'design',
-  'photography',
-  'artificial intelligence',
-  'illustration',
-  'typography',
-  'social networks',
-  'research',
-  'dron pilot',
-  'games',
-];
 
 export function Interests() {
   return Box({
