@@ -1,4 +1,5 @@
 import { Box } from '../box/box';
+import { renderList } from '../../helpers/utils';
 import { tags } from './interests.data';
 import './interests.css';
 
@@ -9,7 +10,7 @@ export function Interests() {
     className: 'box--interests',
     children: /* html */ `
     <ul class="interests-list">
-      ${tags.map((tag) => `<li class="interests-list__tag" contenteditable>${tag}</li>`).join('')}      
+      ${renderList(tags.map((tag) => `<li class="interests-list__tag" contenteditable>${tag}</li>`))}      
     </ul>
     `,
   });

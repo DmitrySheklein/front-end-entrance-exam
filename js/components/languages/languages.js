@@ -1,4 +1,5 @@
 import { Box } from './../box/box';
+import { renderList } from '../../helpers/utils';
 import './languages.css';
 
 const data = [
@@ -14,15 +15,15 @@ export function Languages() {
     title: 'Languages',
     children: /*html*/ `
         <ul class="languages-list">
-            ${data
-              .map(
+            ${renderList(
+              data.map(
                 ({ title, value }) => /*html*/ `
                 <li class="languages-list__item">
                     <h3 class="languages-list__title" contenteditable>${title}</h3>
                     <progress class="languages-list__progress" value="${value}" max="100">${value}%</progress>
                 </li>`,
-              )
-              .join('')}
+              ),
+            )}
         </ul>
         `,
   });

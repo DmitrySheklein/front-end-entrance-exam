@@ -1,4 +1,5 @@
 import { Box } from '../box/box';
+import { renderList } from '../../helpers/utils';
 import { jobList } from './experience.data';
 import './experience.css';
 
@@ -9,8 +10,8 @@ export function Experience() {
     className: 'box--experience',
     children: /*html*/ `
     <ul class="experience-list">
-      ${jobList
-        .map(
+      ${renderList(
+        jobList.map(
           ({
             isMostRecent,
             date: [dateFrom, dateTo],
@@ -42,14 +43,14 @@ export function Experience() {
                     </span>
                   </div>
                   <ul class="experience-item__list">
-                    ${points.map((point) => `<li class="experience-item__list-item" contenteditable>${point}</li>`).join('')}                  
+                    ${renderList(points.map((point) => `<li class="experience-item__list-item" contenteditable>${point}</li>`))}                  
                   </ul>
                 </div>
               </div>
             `,
             }),
-        )
-        .join('')}    
+        ),
+      )}
     </ul>
     `,
   });
