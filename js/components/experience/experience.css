@@ -1,31 +1,74 @@
 .experience-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
 }
 
 .experience-item {
-    display: flex;
-    flex-direction: column;
-    gap: 8px
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.experience-item__header{
-    display: flex;
-    justify-content: space-between;
+
+.experience-item__header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .experience-item__date {
-    font-size: 8px;
+  font-size: 8px;
 }
 
 .experience-item__tag {
-    font-size: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 60px;
+  color: var(--color-light-green);
+  background-color: var(--color-green-40);
+}
+
+.experience-item__content {
+  display: flex;
+  gap: 8px;
+}
+
+.experience-item__info {
+  flex-grow: 1;
+  line-height: 1;
 }
 
 .experience-item__role {
-    font-size:10px;
+  font-size: 10px;
+}
+
+.experience-item__about {
+  font-size: 8px;
+  color: var(--color-white);
+}
+
+@media (prefers-color-scheme: light) {
+  .experience-item__about {
+    color: var(--color-graphit);
+  }
+  .experience-item__about--accent {
+    color: var(--color-white-light);
+  }
+}
+
+.experience-item__delimetr{
+    margin: 0 6px;
 }
 
 .experience-item__list {
-    list-style: square;
+  width: 61.75%;
+  list-style-type: disc;
+  padding: initial;
+}
+
+.experience-item__list-item {
+  font-size: 8px;
 }

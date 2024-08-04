@@ -1,4 +1,6 @@
 .box {
+  display: flex;
+  flex-direction: column;
   position: relative;
   min-width: 124px;
   min-height: 124px;
@@ -11,10 +13,16 @@
   background-color: var(--color-black);
 }
 
-.box--content{
+.box--content {
+  flex-grow: 1;
   background-color: var(--color-white-10);
   padding: 8px;
   min-height: auto;
+}
+
+.box--accent {
+  color: var(--color-white);
+  background-color: var(--color-green);
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,8 +35,14 @@
     background-color: var(--color-black);
     color: var(--color-white);
   }
-  .box--content{
+
+  .box--content {
     background-color: var(--color-white);
+  }
+
+  .box--accent {
+    color: var(--color-white);
+    background-color: var(--color-green);
   }
 }
 

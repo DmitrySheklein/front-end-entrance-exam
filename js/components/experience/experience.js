@@ -48,7 +48,7 @@ export function Experience() {
       ${jobList
         .map(({ isMostRecent, date, role, companyName, info, points }) =>
           Box({
-            className: 'box--content',
+            className: `box--content ${isMostRecent ? 'box--accent' : ''}`,
             children: /* html */ `
               <li class="experience-item">
                 <header class="experience-item__header">
@@ -56,10 +56,15 @@ export function Experience() {
                   ${isMostRecent ? `<sup class="experience-item__tag">most-recent</sup>` : ''}                
                 </header>
 
-                <div class="experience-item__info">
-                  <h3 class="experience-item__role">${role}</h3>
+                <div class="experience-item__content">
+                  <div class="experience-item__info">
+                    <h3 class="experience-item__role">${role}</h3>
+                    <span class="experience-item__about ${isMostRecent ? 'experience-item__about--accent' : ''}">
+                      ${companyName ? `${companyName}<span class="experience-item__delimetr">|</span>` : ''}${info}
+                    </span>
+                  </div>
                   <ul class="experience-item__list">
-                    ${points.map((point) => `<li>${point}</li>`).join('')}                  
+                    ${points.map((point) => `<li class="experience-item__list-item">${point}</li>`).join('')}                  
                   </ul>
                 </div>
               </li>
