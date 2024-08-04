@@ -1,5 +1,5 @@
 import './download.css';
 
 export function Download() {
-  return `<button>Скачать</button>`;
+  return /*html*/ `<button id="download-btn" type="button">Скачать</button>`;
 }
