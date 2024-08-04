@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{js, css}\" --config ./.prettierrc.json"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
