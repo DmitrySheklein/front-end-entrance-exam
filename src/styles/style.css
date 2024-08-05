@@ -79,12 +79,12 @@ button {
 }
 
 button:hover {
-border-color: #646cff;
+  border-color: #646cff;
 }
 
 button:focus,
 button:focus-visible {
-outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
@@ -103,7 +103,7 @@ outline: 4px auto -webkit-focus-ring-color;
 .main {
   display: grid;
   gap: 20px;
-  width: fit-content;  
+  width: fit-content;
   grid-template-columns: repeat(4, 124px);
   grid-template-areas:
     'avatar user languages languages'
