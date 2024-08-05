@@ -8,7 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write \"src/**/*.{js, css}\" --config ./.prettierrc.json"
+    "format": "prettier --write \"src/**/*.{js, css}\" --config ./.prettierrc.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
