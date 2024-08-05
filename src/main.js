@@ -11,7 +11,6 @@ import { Download } from './components/download/download';
 import { setupDownloadPDF } from './download-pdf';
 import { ElementId } from './const';
 import { contentStorage } from './content-storage';
-import { initRippleEffect } from './ripple-effect';
 
 document.querySelector('#app').innerHTML = /*html*/ `
   <main class="main" id="${ElementId.Main}">
@@ -31,4 +30,3 @@ setupDownloadPDF({
   btn: document.getElementById(ElementId.Btn),
 });
 contentStorage();
-initRippleEffect();
