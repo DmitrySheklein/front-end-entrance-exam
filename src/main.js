@@ -10,6 +10,7 @@ import { Contacts } from './components/contacts/contacts';
 import { Download } from './components/download/download';
 import { setupDownloadPDF } from './download-pdf';
 import { ElementId } from './const';
+import { contentStorage } from './content-storage';
 
 document.querySelector('#app').innerHTML = /*html*/ `
   <main class="main" id="${ElementId.Main}">
@@ -28,3 +29,4 @@ setupDownloadPDF({
   container: document.getElementById(ElementId.Main),
   btn: document.getElementById(ElementId.Btn),
 });
+contentStorage();
