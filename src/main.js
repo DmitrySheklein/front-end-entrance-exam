@@ -1,5 +1,5 @@
-import '../css/main-colors.css';
-import '../css/style.css';
+import './styles/main-colors.css';
+import './styles/style.css';
 import { UserBlock } from './components/user-block/user-block';
 import { Languages } from './components/languages/languages';
 import { Experience } from './components/experience/experience';
