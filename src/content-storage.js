@@ -1,7 +1,7 @@
 export function contentStorage() {
   const editableElements = document.querySelectorAll('[contenteditable]');
 
-  function savePageContent(evt) {
+  function saveContent(evt) {
     const element = evt.target;
     const id = element.dataset.id;
 
@@ -19,6 +19,6 @@ export function contentStorage() {
     });
   }
 
-  document.addEventListener('input', savePageContent);
+  document.addEventListener('input', saveContent);
   document.addEventListener('DOMContentLoaded', loadPageContent);
 }
