@@ -1,20 +1,13 @@
-import html2canvas from 'html2canvas';
-import { jsPDF } from 'jspdf';
+import html2pdf from 'html2pdf.js';
 
 export async function exportHTMLtoPDF(element) {
-  return html2canvas(element, { scale: 5 }).then((canvas) => {
-    const image = canvas.toDataURL('image/png');
+  const opt = {
+    margin: [0.5, 0.5, 0.5, 0.5],
+    filename: 'cv.pdf',
+    image: { type: 'jpeg', quality: 1 },
+    html2canvas: { scale: 5 },
+    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+  };
 
-    const pdf = new jsPDF({
-      orientation: 'p',
-      unit: 'px',
-      format: 'a4',
-      putOnlyUsedFonts: true,
-      floatPrecision: 'smart',
-    });
-
-    pdf.addImage(image, 'PNG', 0, 0, 445, 625, undefined, 'FAST');
-
-    pdf.save('cv.pdf');
-  });
+  return html2pdf().set(opt).from(element).save();
 }
